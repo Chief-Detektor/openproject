@@ -95,6 +95,9 @@ export class ApiV3Service {
   // /api/v3/github_pull_requests
   public readonly github_pull_requests = this.apiV3CollectionEndpoint('github_pull_requests');
 
+  // /api/v3/github_pull_requests
+  public readonly gitea_pull_requests = this.apiV3CollectionEndpoint('gitea_pull_requests');
+
   // /api/v3/grids
   public readonly grids = this.apiV3CustomEndpoint(ApiV3GridsPaths);
 

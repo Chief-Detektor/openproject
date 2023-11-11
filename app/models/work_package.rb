@@ -66,6 +66,7 @@ class WorkPackage < ApplicationRecord
   }
 
   has_and_belongs_to_many :github_pull_requests # rubocop:disable Rails/HasAndBelongsToMany
+  has_and_belongs_to_many :gitea_pull_requests # rubocop:disable Rails/HasAndBelongsToMany
 
   has_many :members, as: :entity, dependent: :destroy
   has_many :member_principals, through: :members, class_name: 'Principal', source: :principal

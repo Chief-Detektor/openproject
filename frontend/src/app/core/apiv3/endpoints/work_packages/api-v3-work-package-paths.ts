@@ -52,6 +52,9 @@ export class ApiV3WorkPackagePaths extends ApiV3Resource<WorkPackageResource> {
   // /api/v3/(?:projectPath)/work_packages/(:workPackageId)/github_pull_requests
   public readonly github_pull_requests = this.subResource('github_pull_requests');
 
+  // /api/v3/(?:projectPath)/work_packages/(:workPackageId)/gitea_pull_requests
+  public readonly gitea_pull_requests = this.subResource('gitea_pull_requests');
+
   // /api/v3/(projects/:projectIdentifier)/work_packages/(:workPackageId)/form
   public readonly form:ApiV3WorkPackageForm = this.subResource('form', ApiV3WorkPackageForm);
 
